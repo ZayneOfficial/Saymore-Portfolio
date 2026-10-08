@@ -1,13 +1,25 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false)
+    const [theme, setTheme] = useState(() => {
+        const savedTheme = window.localStorage.getItem('theme')
+        if (savedTheme) return savedTheme
+
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    })
+
     const links = [
         ['About', '#about'],
         ['Experience', '#experience'],
         ['Projects', '#projects'],
         ['Contact', '#contact'],
     ]
+
+    useEffect(() => {
+        document.documentElement.setAttribute('data-theme', theme)
+        window.localStorage.setItem('theme', theme)
+    }, [theme])
 
     return (
         <header className="site-header">
@@ -16,6 +28,14 @@ function Header() {
                 <div className="nav-links">
                     {links.map(([label, href]) => <a key={href} href={href}>{label}</a>)}
                 </div>
+                <button
+                    className="theme-toggle"
+                    type="button"
+                    aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+                    onClick={() => setTheme((currentTheme) => currentTheme === 'dark' ? 'light' : 'dark')}
+                >
+                    <i className={`fa-solid ${theme === 'dark' ? 'fa-sun' : 'fa-moon'}`} aria-hidden="true" />
+                </button>
                 <a className="nav-cta" href="https://github.com/ZayneOfficial" target="_blank" rel="noreferrer">
                     Visit Github
                 </a>
@@ -35,6 +55,15 @@ function Header() {
                     {links.map(([label, href]) => (
                         <a key={href} href={href} onClick={() => setMenuOpen(false)}>{label}</a>
                     ))}
+                    <button
+                        className="theme-toggle mobile-theme-toggle"
+                        type="button"
+                        aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+                        onClick={() => setTheme((currentTheme) => currentTheme === 'dark' ? 'light' : 'dark')}
+                    >
+                        <i className={`fa-solid ${theme === 'dark' ? 'fa-sun' : 'fa-moon'}`} aria-hidden="true" />
+                        <span>{theme === 'dark' ? 'Light mode' : 'Dark mode'}</span>
+                    </button>
                     <a className="mobile-menu-cta" href="https://github.com/ZayneOfficial" target="_blank" rel="noreferrer">
                         Visit Github
                     </a>
