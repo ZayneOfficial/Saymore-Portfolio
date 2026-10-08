@@ -58,6 +58,32 @@ body {
 	transition: opacity 160ms ease, color 160ms ease;
 }
 
+.nav-links a,
+.mobile-menu > a:not(.mobile-menu-cta) {
+	position: relative;
+}
+
+.nav-links a::after,
+.mobile-menu > a:not(.mobile-menu-cta)::after {
+	position: absolute;
+	right: 0;
+	bottom: -5px;
+	left: 0;
+	height: 2px;
+	background: var(--gradient);
+	content: '';
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 180ms ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus-visible::after,
+.mobile-menu > a:not(.mobile-menu-cta):hover::after,
+.mobile-menu > a:not(.mobile-menu-cta):focus-visible::after {
+	transform: scaleX(1);
+}
+
 .nav-links a:hover,
 .nav-brand:hover {
 	color: #fff;
@@ -510,6 +536,7 @@ body {
 	}
 
 	.mobile-menu > a:not(.mobile-menu-cta) {
+		align-self: center;
 		padding: 9px;
 		color: #ddd;
 		font-size: 14px;
