@@ -16,7 +16,7 @@ function Header() {
                 <div className="nav-links">
                     {links.map(([label, href]) => <a key={href} href={href}>{label}</a>)}
                 </div>
-                <a className="nav-cta" href="https://github.com" target="_blank" rel="noreferrer">
+                <a className="nav-cta" href="https://github.com/ZayneOfficial" target="_blank" rel="noreferrer">
                     Visit Github
                 </a>
                 <button
@@ -35,7 +35,7 @@ function Header() {
                     {links.map(([label, href]) => (
                         <a key={href} href={href} onClick={() => setMenuOpen(false)}>{label}</a>
                     ))}
-                    <a className="mobile-menu-cta" href="https://github.com" target="_blank" rel="noreferrer">
+                    <a className="mobile-menu-cta" href="https://github.com/ZayneOfficial" target="_blank" rel="noreferrer">
                         Visit Github
                     </a>
                 </div>
