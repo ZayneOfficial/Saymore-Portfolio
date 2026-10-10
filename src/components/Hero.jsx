@@ -1,10 +1,11 @@
+import zayneImage from '../assets/zayne.png'
 function Hero() {
     return (
         <section className="hero section-shell" id="about">
             <div className="hero-image-wrap">
                 <img
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800"
-                    alt="Portrait of Jace Smith"
+                    src={zayneImage}
+                    alt="Portrait of Saymore Muchenje"
                 />
             </div>
             <div className="hero-copy">

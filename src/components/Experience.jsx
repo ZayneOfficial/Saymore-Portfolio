@@ -1,3 +1,4 @@
+import zayneImage from '../assets/zayne.png'
 const experienceItems = [
 	{ icon: 'fa-code', title: 'Frontend Development', years: '5 Years' },
 	{ icon: 'fa-file-code', title: 'Graphic Design', years: '2 Years', regular: true },
@@ -22,8 +23,8 @@ function Experience() {
 				</div>
 				<div className="experience-image">
 					<img
-						src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800"
-						alt="Jace Smith"
+						src={zayneImage}
+						alt="Saymore Muchenje working on a laptop"
 						loading="lazy"
 					/>
 				</div>

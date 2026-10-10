@@ -548,6 +548,10 @@ body {
 		display: none;
 	}
 
+	.nav-shell > .theme-toggle {
+		display: none;
+	}
+
 	.menu-toggle {
 		width: 34px;
 		height: 34px;
