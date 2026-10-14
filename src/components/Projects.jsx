@@ -1,24 +1,24 @@
 const projects = [
 	{
-		name: 'Project X',
-		description: 'Built a performance dashboard that turns complex data into clear, actionable insights for teams.',
+		name: 'Burial Society MS',
+		description: 'Developed a member management system that helps organizations track contributions, member records, and communication with clarity and trust.',
 		image: 'photo-1551288049-bebda4e38f71',
 		theme: 'featured',
-		alt: 'Analytics interface preview',
+		alt: 'Member management dashboard preview',
 	},
 	{
-		name: 'Project Y',
-		description: 'Created a refined portfolio experience focused on storytelling, visual clarity, and stronger engagement.',
-		image: 'photo-1507238691740-187a5b1d37b8',
+		name: 'Chat App',
+		description: 'Built a real-time messaging experience with clear conversations, responsive layouts, and smooth user interaction for everyday communication.',
+		image: 'photo-1522202176988-66273c2fd55f',
 		theme: 'lavender',
-		alt: 'Portfolio dashboard preview',
+		alt: 'Chat app interface preview',
 	},
 	{
-		name: 'Project Z',
-		description: 'Developed a modern interface system designed to spotlight products through intuitive navigation and clean design.',
-		image: 'photo-1618005182384-a83a8bd57fbe',
+		name: 'Budget Tracker',
+		description: 'Created a personal finance dashboard for monitoring expenses, setting savings goals, and staying in control of monthly spending.',
+		image: 'photo-1554224155-8d04cb21cd6c',
 		theme: 'gold',
-		alt: 'Abstract project interface preview',
+		alt: 'Budget tracking dashboard preview',
 	},
 ]
 
