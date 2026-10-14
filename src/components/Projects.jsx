@@ -1,21 +1,21 @@
 const projects = [
 	{
 		name: 'Project X',
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ullam?',
+		description: 'Built a performance dashboard that turns complex data into clear, actionable insights for teams.',
 		image: 'photo-1551288049-bebda4e38f71',
 		theme: 'featured',
 		alt: 'Analytics interface preview',
 	},
 	{
 		name: 'Project Y',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, corrupti.',
+		description: 'Created a refined portfolio experience focused on storytelling, visual clarity, and stronger engagement.',
 		image: 'photo-1507238691740-187a5b1d37b8',
 		theme: 'lavender',
 		alt: 'Portfolio dashboard preview',
 	},
 	{
 		name: 'Project Z',
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, cum.',
+		description: 'Developed a modern interface system designed to spotlight products through intuitive navigation and clean design.',
 		image: 'photo-1618005182384-a83a8bd57fbe',
 		theme: 'gold',
 		alt: 'Abstract project interface preview',

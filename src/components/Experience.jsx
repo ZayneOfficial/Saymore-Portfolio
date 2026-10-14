@@ -17,7 +17,7 @@ function Experience() {
 							<i className={`${regular ? 'fa-regular' : 'fa-solid'} ${icon} experience-icon`} aria-hidden="true" />
 							<h3 className="gradient-text">{title}</h3>
 							<p className="experience-years">{years}</p>
-							<p className="muted-copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, iste.</p>
+							<p className="muted-copy">Designing experiences that balance function, clarity, and a smooth user journey.</p>
 						</article>
 					))}
 				</div>
